@@ -24,6 +24,8 @@ def create_sorted_dictionary_of_restaurant_ratings(rated_restaurants):
 sorted_ratings = create_sorted_dictionary_of_restaurant_ratings(import_file)
 
 def print_ratings(sorted_dictionary):
+    """ Print out sorted ratings dictionary. """
+    
     for line in sorted_dictionary:
         print("{} is rated at {}".format(line[0], line[1]))
 
