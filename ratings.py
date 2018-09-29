@@ -13,15 +13,12 @@ def create_sorted_dictionary_of_restaurant_ratings(rated_restaurants):
 
     for line in rated_restaurants:
         line = line.strip().split(":")
-        # print(line)
         dictionary_key = line[0]
         dictionary_value = line[1]
         restaurant_ratings_by_name[dictionary_key] = dictionary_value
-        # print(restaurant_ratings_by_name)
 
     restaurant_ratings_by_name_sorted = sorted(restaurant_ratings_by_name.items())
     return(restaurant_ratings_by_name_sorted)
-    # print(restaurant_ratings_by_name.items())
 
 
 sorted_ratings = create_sorted_dictionary_of_restaurant_ratings(import_file)
