@@ -26,3 +26,12 @@ def print_ratings(sorted_dictionary):
         print("{} is rated at {}".format(line[0], line[1]))
 
 (print_ratings(sorted_ratings))
+
+def ask_user_restaurant_rating():
+    while True:
+        print("Follow the prompts below, when you are finished enter 'quit' into 'Name of restaurant' prompt.")
+        restaurant_name = input("Name of restaurant: ").title()
+        if restaurant_name == "Quit":
+            break
+        restaurant_rating = input("{}'s rating: ".format(restaurant_name))
+ask_user_restaurant_rating()
